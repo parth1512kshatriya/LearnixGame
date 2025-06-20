@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Learnix - Learn, Play & Win Money | Quiz Gaming App</title>
+    <meta name="description"
+        content="Join millions of players earning real money with Learnix quiz games. Learn, play engaging quizzes, and win cash rewards. Download the APK now!">
+    <meta name="keywords" content="quiz game, earn money, learning app, cash rewards, educational games">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-icon">
+                        <span>&int;<sup style="font-size: 15px; font-weight: 100;">G</sup></span>
+                    </div>
+                    <span class="logo-text">Learnix Game</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#how-it-works" class="nav-link">How It Works</a>
+                    <a href="#rewards" class="nav-link">Rewards</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                </nav>
+
+                <!-- Right Controls -->
+                <div class="header-controls">
+                    <!-- Theme Toggle -->
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Download Button -->
+                    <button class="btn-primary download-btn-desktop">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7,10 12,15 17,10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Download</span>
+                    </button>
+
+                    <!-- Mobile Menu Button -->
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu">
+                        <span class="hamburger"></span>
+                        <span class="hamburger"></span>
+                        <span class="hamburger"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#features" class="mobile-nav-link">Features</a>
+                <a href="#how-it-works" class="mobile-nav-link">How It Works</a>
+                <a href="#rewards" class="mobile-nav-link">Rewards</a>
+                <a href="#faq" class="mobile-nav-link">FAQ</a>
+                <button class="btn-primary mobile-download-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7,10 12,15 17,10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>Download APK</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+            <div class="hero-shape hero-shape-3"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <!-- Left Content -->
+                <div class="hero-left">
+                    <div class="hero-badge">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                            <path d="M4 22h16"></path>
+                            <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                            <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                            <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                        </svg>
+                        <span>Win Real Money Playing Quizzes!</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Learn, Play & <span class="gradient-text">Win Money</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Challenge your knowledge, earn rewards, and have fun with thousands of engaging quizzes across
+                        multiple categories.
+                    </p>
+
+                    <!-- Stats -->
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-value">1M+</div>
+                            <div class="stat-label">Players</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">₹50L+</div>
+                            <div class="stat-label">Rewards Paid</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value">10K+</div>
+                            <div class="stat-label">Quizzes</div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-cta">
+                        <button class="btn-primary btn-large">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7,10 12,15 17,10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            <span>Download APK</span>
+                        </button>
+
+                        <button class="btn-secondary btn-large">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polygon points="5,3 19,12 5,21 5,3"></polygon>
+                            </svg>
+                            <span>Watch Demo</span>
+                        </button>
+                    </div>
+
+                    <!-- User Rating -->
+                    <div class="hero-rating">
+                        <div class="stars">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon
+                                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2">
+                                </polygon>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon
+                                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2">
+                                </polygon>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon
+                                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2">
+                                </polygon>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon
+                                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2">
+                                </polygon>
+                            </svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <polygon
+                                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2">
+                                </polygon>
+                            </svg>
+                        </div>
+                        <span>4.8/5 from 50,000+ reviews</span>
+                    </div>
+                </div>
+
+                <!-- Right Content - Phone Mockup -->
+                <div class="hero-right">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <div class="phone-status-bar">
+                                    <span>9:41</span>
+                                    <span>Learnix</span>
+                                    <span>100%</span>
+                                </div>
+
+                                <div class="phone-content">
+                                    <div class="phone-header">
+                                        <h3>Daily Quiz Challenge</h3>
+                                        <p>Answer 10 questions correctly</p>
+                                    </div>
+
+                                    <div class="phone-earnings">
+                                        <div class="earnings-header">
+                                            <span>Potential Earnings</span>
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                                                <path d="M4 22h16"></path>
+                                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22">
+                                                </path>
+                                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22">
+                                                </path>
+                                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="earnings-amount">₹250</div>
+                                    </div>
+
+                                    <div class="phone-categories">
+                                        <div class="category-item">
+                                            <div>
+                                                <div class="category-icon">1</div>
+                                                <span>Science</span>
+                                            </div>
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                        <div class="category-item">
+                                            <div>
+                                                <div class="category-icon">2</div>
+                                                <span>History</span>
+                                            </div>
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                        <div class="category-item">
+                                            <div>
+                                                <div class="category-icon">3</div>
+                                                <span>Sports</span>
+                                            </div>
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26 12,2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <button class="phone-cta">Start Quiz</button>
+                                </div>
+
+                                <div class="phone-home-indicator"></div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Elements -->
+                        <div class="floating-element floating-element-1">+₹50</div>
+                        <div class="floating-element floating-element-2">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <div class="floating-element floating-element-3">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                                <path d="M4 22h16"></path>
+                                <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                                <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="faq-bg">
+            <div class="faq-shape faq-shape-1"></div>
+            <div class="faq-shape faq-shape-2"></div>
+        </div>
+
+        <div class="container">
+            <div class="section-header" style="position: relative;z-index: 2;">
+                <div class="section-badge">
+                    <i class="fa-regular fa-circle-question"></i>
+                    <span>Got Questions?</span>
+                </div>
+
+                <h2 class="section-title">
+                    Frequently Asked <span class="gradient-text">Questions</span>
+                </h2>
+
+                <p class="section-description">
+                    Everything you need to know about earning money with Learnix quizzes.
+                </p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item active">
+                    <button class="faq-question">
+                        <span>How much money can I really earn with Learnix?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Earnings vary based on your activity level and skill. Active players typically earn
+                            ₹1,500-₹3,000 per month. Top performers can earn ₹5,000+ monthly through tournaments and
+                            consistent gameplay.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I withdraw my earnings?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can withdraw earnings instantly to your bank account, UPI, or digital wallet once you
+                            reach the minimum threshold of ₹50. Withdrawals are processed within 24 hours.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Are the quiz questions updated regularly?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We add 100+ new questions weekly across various categories. Our AI system ensures you
+                            get fresh, challenging content that matches your skill level.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is Learnix completely free to use?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! Downloading and playing Learnix is completely free. You only earn money - you
+                            never have to pay anything to participate in quizzes or tournaments.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What happens if I answer incorrectly?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Incorrect answers don't result in any penalties or charges. You simply won't earn points for
+                            that question, but you can continue playing and learning from the correct answers shown.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I play with friends?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! You can invite friends to join multiplayer quiz battles, create private rooms, and even
+                            earn referral bonuses when friends sign up using your code.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How is the app different from other quiz apps?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Learnix focuses on real money rewards, adaptive learning AI, and educational value. Unlike
+                            gambling-based apps, we reward knowledge and learning with genuine cash prizes.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What categories of quizzes are available?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <polyline points="6,9 12,15 18,9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer 20+ categories including General Knowledge, Science, History, Sports, Entertainment,
+                            Technology, Geography, Literature, and more. New categories are added monthly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-cta">
+                <h3>Still Have Questions?</h3>
+                <p>Our support team is available 24/7 to help you get started and maximize your earnings.</p>
+                <div class="faq-buttons">
+                    <button class="btn-primary">Contact Support</button>
+                    <button class="btn-secondary">Join Community</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bg">
+            <div class="footer-shape footer-shape-1"></div>
+            <div class="footer-shape footer-shape-2"></div>
+        </div>
+
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <span>&int;<sup style="font-size: 15px; font-weight: 100;">G</sup></span>
+                        </div>
+                        <span class="logo-text">Learnix Game</span>
+                    </div>
+
+                    <p class="footer-description">
+                        The ultimate quiz gaming platform where knowledge meets rewards. Join millions of players
+                        earning real money while expanding their minds.
+                    </p>
+
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>support@learnixgame.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            <span>+91 9311088577</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <span>Gujarat, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Product</h3>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#how-it-works">How It Works</a></li>
+                            <li><a href="#rewards">Rewards</a></li>
+                            <li><a href="#download">Download</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#">Bug Report</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press Kit</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-newsletter">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h3>Stay Updated</h3>
+                        <p>Get the latest updates on new features and earning opportunities.</p>
+                    </div>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input">
+                        <button class="btn-primary newsletter-btn">Register Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <i class="fa-regular fa-copyright"></i> 2024 Learnix Game. All rights reserved. Made with <i
+                        class="fa-solid fa-heart" style="color: orangered;"></i> for
+                    learners worldwide.
+                </div>
+
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="YouTube">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                            </path>
+                            <polygon points="9.75,15.02 15.5,11.75 9.75,8.48"></polygon>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
