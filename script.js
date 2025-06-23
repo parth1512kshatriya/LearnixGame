@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const mobileMenu = document.getElementById('mobileMenu');
 
     // Check for saved theme preference or default to 'light'
-    const currentTheme = localStorage.getItem('theme') || 'dark';
+    const currentTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.setAttribute('data-theme', currentTheme);
 
     // Theme toggle event listener
