@@ -5,6 +5,18 @@ document.addEventListener('DOMContentLoaded', function () {
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
 
+    const termsCheckbox = document.getElementById('terms');
+    const sendMessageBtn = document.getElementById('sendMessageBtn');
+
+    // Initial state
+    sendMessageBtn.disabled = !termsCheckbox.checked;
+
+    // Enable/disable the button based on terms checkbox
+    termsCheckbox.addEventListener('change', () => {
+        sendMessageBtn.disabled = !termsCheckbox.checked;
+    });
+
+
     // Check for saved theme preference or default to 'dark'
     const currentTheme = localStorage.getItem('theme') || 'dark';
     document.documentElement.setAttribute('data-theme', currentTheme);
