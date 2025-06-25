@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
 
-    // Check for saved theme preference or default to 'dark'
+    // Check for saved theme preference or default to 'light'
     const currentTheme = localStorage.getItem('theme') || 'dark';
     document.documentElement.setAttribute('data-theme', currentTheme);
 
@@ -214,8 +214,8 @@ document.addEventListener('DOMContentLoaded', function () {
             notification.style.transform = 'translateX(100%)';
             setTimeout(() => {
                 document.body.removeChild(notification);
-            }, 300);
-        }, 3000);
+            }, 100);
+        }, 2000);
     }
 
     // Add parallax effect to background shapes
@@ -275,3 +275,22 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('Learnix Quiz App initialized successfully!');
 });
 
+// scroll to top button logic
+
+const scrollToTopBtn = document.getElementById('scrollToTop');
+
+window.addEventListener('scroll',function(){
+    if(window.pageYOffset > 200){
+        scrollToTopBtn.style.display = 'flex';
+    }
+    else{
+        scrollToTopBtn.style.display = 'none';
+    }
+});
+
+scrollToTopBtn.addEventListener('click',function(){
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+});
