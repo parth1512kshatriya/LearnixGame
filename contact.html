@@ -301,15 +301,6 @@
 
                         <div class="form-group">
                             <label class="checkbox-label">
-                                <input type="checkbox" id="newsletter" name="newsletter">
-                                <span class="checkbox-custom"></span>
-                                <span class="checkbox-text">I'd like to receive updates about new features and
-                                    promotions</span>
-                            </label>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="checkbox-label">
                                 <input type="checkbox" id="terms" name="terms" required>
                                 <span class="checkbox-custom"></span>
                                 <span class="checkbox-text">I agree to the <a href="#" class="terms-link">Privacy
@@ -317,11 +308,13 @@
                             </label>
                             <span class="form-error" id="termsError"></span>
                         </div>
-
-                        <button type="submit" class="btn-primary btn-large contact-submit-btn">
+                        
+                        <button type="submit" class="btn-primary btn-large contact-submit-btn" id="sendMessageBtn"
+                            disabled>
                             <i class="fa-solid fa-paper-plane"></i>
                             <span>Send Message</span>
                         </button>
+
                     </form>
                 </div>
 
