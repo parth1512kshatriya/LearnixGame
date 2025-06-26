@@ -1846,7 +1846,7 @@ body {
 }
 
 [data-theme="dark"] .contact-stat {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.15);
     border-color: var(--border-color);
 }
 
