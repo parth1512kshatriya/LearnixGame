@@ -756,7 +756,7 @@ body {
 .hero-right {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 @media (min-width: 1024px) {
