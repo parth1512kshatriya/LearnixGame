@@ -1617,19 +1617,14 @@ body {
 .social-link {
     width: 2.5rem;
     height: 2.5rem;
-    background: var(--bg-tertiary);
-    border-radius: var(--border-radius-xl);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--text-tertiary);
     text-decoration: none;
     transition: all var(--transition-normal);
 }
 
 .social-link:hover {
-    color: var(--primary-orange);
-    background: var(--bg-primary);
     transform: scale(1.1);
 }
 
@@ -2335,15 +2330,60 @@ body {
     border: 1px solid var(--border-color);
 }
 
-.contact-social-link:hover {
-    color: var(--primary-orange);
-    background: var(--primary-orange-lighter);
-    border-color: var(--primary-orange);
+.contact-social-link:nth-child(1):hover {
+    color: #fff;
+    background: #4f82c4;
+    border-color: #1877f2;
     transform: translateX(5px);
 }
 
-[data-theme="dark"] .contact-social-link:hover {
-    background: rgba(249, 115, 22, 0.2);
+[data-theme="dark"] .contact-social-link:nth-child(1):hover {
+    color: #fff;
+    background: #32598d;
+    border-color: #1877f2;
+    transform: translateX(5px);
+}
+
+.contact-social-link:nth-child(2):hover {
+    color: #000;
+    background: rgb(171, 170, 170);
+    border-color: #000;
+    transform: translateX(5px);
+}
+
+[data-theme="dark"] .contact-social-link:nth-child(2):hover {
+    color: #fff;
+    background: #212122;
+    border-color: #fff;
+    transform: translateX(5px);
+}
+
+.contact-social-link:nth-child(3):hover {
+    color: #fff;
+    background: #cd4783;
+    border-color: #a80046;
+    transform: translateX(5px);
+}
+
+[data-theme="dark"] .contact-social-link:nth-child(3):hover {
+    color: #fff;
+    background: #7b405a;
+    border-color: #dd2a7b;
+    transform: translateX(5px);
+}
+
+.contact-social-link:nth-child(4):hover {
+    color: #fff;
+    background: #26af58;
+    border-color: #018732;
+    transform: translateX(5px);
+}
+
+[data-theme="dark"] .contact-social-link:nth-child(4):hover {
+    color: #fff;
+    background: #2d6d44;
+    border-color: #25d366;
+    transform: translateX(5px);
 }
 
 .contact-social-link i {
