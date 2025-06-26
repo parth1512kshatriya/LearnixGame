@@ -341,7 +341,7 @@ document.addEventListener('DOMContentLoaded', function () {
         link.addEventListener('click', function (e) {
             e.preventDefault();
             const platform = this.textContent.trim();
-            showNotification(`${platform} page will open soon!`, 'info');
+            showNotification(`${platform} page will be available soon!`, 'info');
         });
     });
 
