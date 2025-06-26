@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
 
-    // Check for saved theme preference or default to 'light'
+    // Check for saved theme preference or default to 'dark'
     const currentTheme = localStorage.getItem('theme') || 'dark';
     document.documentElement.setAttribute('data-theme', currentTheme);
 
@@ -294,3 +294,4 @@ scrollToTopBtn.addEventListener('click',function(){
         behavior:"smooth"
     });
 });
+
