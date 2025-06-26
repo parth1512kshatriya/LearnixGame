@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    user-select:none;
+    user-select: none;
 }
 
 :root {
@@ -2502,6 +2502,21 @@ body {
 }
 
 @media (max-width: 768px) {
+
+    .contact-form-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form-content {
+        order: 1;
+    }
+
+    .contact-info-sidebar {
+        order: 2;
+        margin-top: 2rem;
+    }
+
     .contact-method-card.full-width {
         grid-column: auto;
     }
@@ -2510,3 +2525,19 @@ body {
         text-align: center;
     }
 }
+
+@media (min-width: 769px) {
+    .contact-form-wrapper {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .contact-form-content {
+        flex: 2;
+    }
+
+    .contact-info-sidebar {
+        flex: 1;
+    }
+}
+
